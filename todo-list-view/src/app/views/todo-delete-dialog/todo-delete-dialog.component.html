@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>Excluir Todo</h1>
+<div mat-dialog-content>
+    <form>
+        <mat-form-field>
+            <mat-label>Nome</mat-label>
+            <input matInput name="nome" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Done</mat-label>
+            <input matInput  name="done" disabled>
+        </mat-form-field>   
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="deleteTodo()" color="warn">
+        Excluir
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</div>
