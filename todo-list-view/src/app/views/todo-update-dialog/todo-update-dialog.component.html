@@ -1,1 +1,22 @@
-<p>todo-update-dialog works!</p>
+<h1 mat-dialog-title>Alterar Todo</h1>
+<div mat-dialog-content>
+    <form>
+        <mat-form-field>
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Nome" [(ngModel)]="todo.nome" name="nome">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Done</mat-label>
+            <input matInput placeholder="Done" [(ngModel)]="todo.done" name="done">
+        </mat-form-field>   
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="updateTodo()" color="primary">
+        Atualizar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</div>
